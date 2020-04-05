@@ -1,0 +1,52 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+
+/*Adding image as backgroung from CSS tricks perfect full page background image 
+https://css-tricks.com/perfect-full-page-background-image/  */
+  background: url(header.jpg) no-repeat center center fixed; /*This line is the key to play the image in the center and fixed no matter how the user resize the broswer*/
+  -webkit-background-size: cover;/*This line ensure the image cover the whole broswer*/
+  -moz-background-size: cover;/*This line ensure the image cover the whole broswer*/
+  -o-background-size: cover;/*This line ensure the image cover the whole broswer*/
+  background-size: cover;/*This line ensure the image cover the whole broswer*/
+}
+
+h1{
+	font-size: 3rem;
+	color: #afc1d4;
+}
+
+.buffer{
+	height: 6rem;	
+}
+
+hr{
+	border-color: #ee4b08;
+	border-width: 3px;
+	max-width: 65px;
+}
+
+/*Changing the Properties of the button from BootStrap from it button Class "btn*/
+.btn{
+	font-weight: 700;
+	border-radius: 300px;
+	text-transform: uppercase;
+}
+
+.btn-primary{
+	background-color: red;
+	border-color: red;/*THis line is to remove the blue border seem at the button from BootStrap*/
+}
+
+
+.btn-primary:hover{
+	background-color: #ee4b08;
+	border-color: #ee4b08;
+	border-width: 4px;
+}
+
+.btn-Xl{
+	padding: 1rem 2rem; /* Define padding at the top/Bottom 1rem and Left/Right 2rem*/
+}

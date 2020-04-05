@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Startup</title>
+    <!-- Refer to Boostrap Website about Responsive meta Tag:
+     https://getbootstrap.com/docs/4.4/getting-started/introduction/#responsive-meta-tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <!-- To denostrate HTML Tooltip function -->
+<!--   <p title="About W3Schools" style="color:white;text-align:left;font-size: 50px; "><strong>W3Schools HTML ToolTips Demo.</strong></p> -->
+
+  <body>
+    
+    <!-- Creating Grid with BootStrap : https://getbootstrap.com/docs/4.4/layout/grid/ -->
+    <!-- This BootStrap Grip is the Layout https://getbootstrap.com/docs/4.4/layout/grid/
+     This Layout(Grip) will contain h1 hr and Button which is within the <div> then the Grip is define by using the class="container"
+     HTML - Div Element(s)
+     The <div> tag is nothing more than a container unit that encapsulates other page elements and divides the HTML document into sections. Web developers use <div> elements to group together HTML elements and apply CSS styles to many elements at once. -->
+    <!--<div class="container"> this div have an additional class call "container" this is refering to the Grip Container. Referring to the Grip docunment , the Maximum Grip size id 12 for one column which will cover the whole standard large Broswer. Check the "Variable width content" "Responsive classes" "Stacked to horizontal" of the Grip reference -->
+    <!-- The addition d-flex align-items-center h-100 prperty are from BootStrap Flex reference https://getbootstrap.com/docs/4.4/utilities/flex/ -->
+    <!-- "d-flex" mean to Enable flex -->
+    <!-- "align-items-center" mean Align all items within theis container center-->
+    <!-- "h-100" to make this Container occupy 100% of the Broswer. This is require because although this HTML page is 100% of size which is define in the style sheet but this container is not therefore all items inside thid container will not be align exactly center of the HTML Page if "h-100" property is not apply -->
+    <div class="container d-flex align-items-center h-100">
+      <div class="row">
+        <!-- Define a header in this row only contain the h1. 
+          The BootStrap this calss class="text-center" to place the Text at the center of the Broswer. -->
+          <!-- The additional "col-12" property is to let the Header occupy the full max size of the Grip so that the Header will always be at the center of the broswer -->
+        <header class="text-center col-12">
+          <!-- Take note the property class="text-uppercase" is from the Bootstrap BootStrap reference: https://getbootstrap.com/docs/4.4/utilities/text/#text-transform-->
+          <h1 class="text-uppercase"><strong>The Biggest Startup Event Of The Year</strong></h1>
+        </header>
+
+        <!-- Creating a spacing between the Text and the Button by using the buffer class -->
+        <div class="buffer col-12"></div>
+
+        <!-- The additional "col-12" property is to let the Section occupy the full max size of the Grip so that the Section will always be at the center of the broswer -->
+        <section class="text-center col-12">
+        <!-- Simply add a horizontal line -->
+          <hr>
+
+          <!-- Take note the property class="btn btn-primary btn-Xl" is from the Bootstrap. Take note the additional "btn-Xl" is only a referece ID to this button which is added by me tin order to create a style in the style sheet to further change this button properties. BootStrap reference: https://getbootstrap.com/docs/4.4/components/buttons/ -->
+          <a href="https://mailchi.mp/3add764a9a54/ztmstudents"><button class="btn btn-primary btn-Xl">Find Out More</button>
+          </a>
+        </section>
+
+        </div>
+    </div>
+  </body>
+</html>
